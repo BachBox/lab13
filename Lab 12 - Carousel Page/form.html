@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <div class="input-element" for="name">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="input-element">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+
+      <div class="input-element">
+        <label id="number-label" for="number">Number</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Number"
+          min="0"
+          max="2"
+        />
+      </div>
+      <div class="input-element">
+        <label id="select-lable">Who's your favorite team?</label>
+        <select id="dropdown">
+          <option value="">Buck</option>
+          <option value="">Timberwolves</option>
+          <option value="">Lakers</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Have you been to a game before</label>
+        <div>
+          <label for="">
+            <input type="radio" name="game" value="checkbox" />Yes</label
+          >
+        </div>
+        <div>
+          <label for="">
+            <input type="radio" name="game" value="checkbox" />No</label
+          >
+        </div>
+      </div>
+
+      <div>
+        <label for=""
+          >Which suggestions are good ideas for the NBA to implement?</label
+        >
+        <div>
+          <label for="">
+            <input type="checkbox" name="ideas" value="planin" />Play in
+            game</label
+          >
+        </div>
+        <div>
+          <label for="">
+            <input type="checkbox" name="ideas" value="tickets" />Cheaper
+            tickets
+          </label>
+          <label for="">
+            <input type="checkbox" name="ideas" value="food" />Cheaper food
+          </label>
+          <label for="">
+            <input type="checkbox" name="ideas" value="calls" />Less ref calls
+          </label>
+        </div>
+      </div>
+      <div>
+        <label for="">Additional comments</label>
+        <textarea type="text" name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
